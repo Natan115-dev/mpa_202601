@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/less/style.less" />
+    <title>Testimonios</title>
+  </head>
+  <body>
+    {{>header}}
+
+    <main>
+      <section class="grid">
+          <div class="row">
+            <div class="col-12">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p>Estos testimonios reflejan la experiencia real de quienes ya utilizan nuestra plataforma.</p>
+            </div>
+          </div>
+      </section>
+
+      {{> testimonialsPanel testimonials-data-set=testimonios}}
+
+    </main>
+
+    <footer>
+       <section>
+        &copy; Todos los derechos Reservados 2026 ICC UNICAH
+       </section>
+    </footer>
+  </body>
+</html>

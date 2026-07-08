@@ -1,0 +1,46 @@
+.table-container {
+    padding: 1rem 0;
+    overflow-x: auto;
+}
+
+.sports-table,
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: @primary-background-color;
+    box-shadow: 2px 2px 5px @secondary-background-color;
+
+    thead {
+        background-color: @accent-background-color;
+
+        th {
+            color: @secondary-text-color;
+            text-align: left;
+            padding: 0.75rem 1rem;
+            font-weight: bolder;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid @secondary-background-color;
+
+            &:hover {
+                background-color: darken(@primary-background-color, 5%);
+            }
+        }
+
+        td {
+            padding: 0.75rem 1rem;
+            color: @primary-text-color;
+        }
+    }
+
+    .sport-name {
+        font-weight: bolder;
+    }
+
+    .sport-ranking {
+        text-align: center;
+    }
+}

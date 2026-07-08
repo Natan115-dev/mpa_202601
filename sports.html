@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/less/style.less" />
+    <title>Deportes</title>
+  </head>
+  <body>
+    {{>header}}
+    
+    <main>
+      <section class="grid">
+          <div class="row">
+            <div class="col-12 col-md-6">
+                <h2>Sección Informativa de Deportes</h2>
+                <p>Explora las diferentes disciplinas que tenemos indexadas en el sistema. Cada registro detalla los materiales esenciales para su práctica y su respectivo nivel de popularidad o ranking actual.</p>
+                <p>Esta sección es renderizada dinámicamente utilizando un parcial de Handlebars (.hbs) y procesando la data estructurada en archivos JavaScript a través de Vite.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <picture>
+                  <source srcset="https://picsum.photos/id/73/640/640" media="(min-width:700px)">
+                  <img src="https://picsum.photos/id/73/400/400" alt="Sports Image" class="cover-img" />
+                </picture>
+            </div>
+          </div>
+      </section>
+
+      {{> sportsTable sports-data-set=deportes}}
+
+    </main>
+
+    <footer>
+       <section>
+        &copy; Todos los derechos Reservados 2026 ICC UNICAH
+       </section>
+    </footer>
+  </body>
+</html>

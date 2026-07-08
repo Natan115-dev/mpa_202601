@@ -1,0 +1,22 @@
+<div class="table-container">
+  <table class="sports-table">
+    <thead>
+      <tr>
+        <th>Nombre del Deporte</th>
+        <th>Descripción</th>
+        <th>Requerimientos</th>
+        <th>Ranking (1-5)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each sports-data-set}}
+      <tr>
+        <td class="sport-name">{{this.name}}</td>
+        <td>{{this.description}}</td>
+        <td>{{this.requirements}}</td>
+        <td class="sport-ranking">⭐ {{this.ranking}}/5</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

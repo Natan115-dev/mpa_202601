@@ -1,0 +1,15 @@
+<div class="testimonials-panel">
+    {{#each testimonials-data-set}}
+    <article class="testimonial-card">
+        <div class="testimonial-rating">{{this.stars}}</div>
+        <p class="testimonial-text">"{{this.text}}"</p>
+        <div class="testimonial-author">
+            <img class="testimonial-avatar" src="{{this.avatar}}" alt="Foto de {{this.name}}">
+            <div class="testimonial-author-info">
+                <span class="testimonial-name">{{this.name}}</span>
+                <span class="testimonial-role">{{this.role}}</span>
+            </div>
+        </div>
+    </article>
+    {{/each}}
+</div>
